@@ -2,6 +2,7 @@ hapi =			require 'hapi'
 path =			require 'path'
 
 orm =			require 'shout-orm'
+error =			require './error'
 
 pages =
 	register:	require './register'
@@ -49,6 +50,7 @@ module.exports =
 			 	key:			key
 			port:				port
 		server.bind this
+		server.ext 'onPreResponse', error
 		server.route @routes
 
 		@orm.connect()
