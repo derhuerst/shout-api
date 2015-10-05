@@ -24,5 +24,6 @@ module.exports = (req, reply) ->
 		response.statusCode = err.statusCode
 
 	else
-		res.status = 'ok'
-		reply res
+		# todo: fix this weird `.source` hack
+		res.source.status = 'ok'
+		reply res.source
