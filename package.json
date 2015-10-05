@@ -12,9 +12,9 @@
 	"bugs": "https://github.com/derhuerst/shout-api/issues",
 	"version": "0.1.0",
 	"main": "./src/Server.coffee",
-	// "bin": {
-	// 	"shout-api":	"./bin/shout-api"
-	// },
+	"bin": {
+		"shout-api":	"./bin/shout-api"
+	},
 	"preferGlobal": true,
 	"keywords": [
 		"service",
@@ -40,11 +40,11 @@
 		"bin":		"./bin",
 		"src":		"./src",
 		"lib":		"./src"
-	// },
-	// "scripts": {
-	// 	"setup":	"./self-signed-certificate.zsh",
-	// 	"server":	"coffee ./bin/shout -c server.crt -k server.key",
-	// 	"start":	"forever start -c coffee ./bin/shout -c server.crt -k server.key",
-	// 	"stop":		"forever stop ./bin/shout"
+	},
+	"scripts": {
+		"setup":	"./self-signed-certificate.zsh",
+		"server":	"coffee ./bin/shout -c server.crt -k server.key",
+		"start":	"forever start -c coffee ./bin/shout -c server.crt -k server.key",
+		"stop":		"forever stop ./bin/shout"
 	}
 }
