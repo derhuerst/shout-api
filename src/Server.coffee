@@ -21,7 +21,11 @@ module.exports =
 		{
 			path:		'/register'
 			method:		'POST'
-			handler:	api.register
+			handler:	pages.register
+			config:
+				payload:
+					parse:	true
+					output:	'data'
 		}, {
 			path:		'/activate'
 			method:		'POST'
