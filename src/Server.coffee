@@ -29,7 +29,11 @@ module.exports =
 		}, {
 			path:		'/activate'
 			method:		'POST'
-			handler:	api.activate
+			handler:	pages.activate
+			config:
+				payload:
+					parse:	true
+					output:	'data'
 		}, {
 			path:		'/{group}'
 			method:		'GET'
