@@ -38,7 +38,7 @@ else if argv.key? then key = argv.key
 else throw new Error 'Missing `--key` argument.'
 key = fs.readFileSync key
 
-port = 8000
+port = 8001
 if argv.p? then port = argv.p
 if argv.port? then port = argv.port
 
