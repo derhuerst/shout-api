@@ -1,0 +1,50 @@
+{
+	"name": "shout-api",
+	"description": "Let people send push notifications to a group of people.",
+	"license": "MIT",
+	"author": {
+		"name": "Jannis R",
+		"email": "mail@jannisr.de",
+		"url": "http://jannisr.de"
+	},
+	"homepage": "https://github.com/derhuerst/shout-api",
+	"repository": "git://github.com/derhuerst/shout-api.git",
+	"bugs": "https://github.com/derhuerst/shout-api/issues",
+	"version": "0.1.0",
+	"main": "./src/Server.coffee",
+	// "bin": {
+	// 	"shout-api":	"./bin/shout-api"
+	// },
+	"preferGlobal": true,
+	"keywords": [
+		"service",
+		"push",
+		"notification",
+		"realtime",
+		"groups",
+		"subscribe",
+		"app",
+		"webapp",
+		"service",
+		"coffeescript",
+		"javascript"
+	],
+	"dependencies": {
+		"coffee-script":			"^1.10.0",
+		"minimist":					"^1.2.0",
+		"hapi":						"^10.3.0",
+		"shout-orm":				"derhuerst/shout-orm#master",
+		"short-hash":				"^1.0.0"
+	},
+	"directories": {
+		"bin":		"./bin",
+		"src":		"./src",
+		"lib":		"./src"
+	// },
+	// "scripts": {
+	// 	"setup":	"./self-signed-certificate.zsh",
+	// 	"server":	"coffee ./bin/shout -c server.crt -k server.key",
+	// 	"start":	"forever start -c coffee ./bin/shout -c server.crt -k server.key",
+	// 	"stop":		"forever stop ./bin/shout"
+	}
+}
