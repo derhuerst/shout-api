@@ -1,6 +1,6 @@
 # shout-api
 
-*shout-api* is the API server [shout](https://github.com/derhuers/shout).
+*shout-api* is the API server [shout](https://github.com/derhuerst/shout).
 
 work in progress!
 
