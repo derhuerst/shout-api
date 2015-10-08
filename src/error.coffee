@@ -6,8 +6,8 @@ boom =			require 'boom'
 
 module.exports = (req, reply) ->
 	res = req.response
-	if err instanceof Error
-		if not err.isBoom then err = boom.wrap err, err.statusCode
+	if res instanceof Error
+		err = if not res.isBoom then boom.wrap res, res.statusCode else res
 
 		console.error [
 			err.output.statusCode
@@ -18,12 +18,13 @@ module.exports = (req, reply) ->
 			console.error err.stack
 			err = boom.badImplementation()
 
-		response = reply
-			status:	'error'
-			error:	err
-		response.statusCode = err.statusCode
+		response = err.output?.payload or {}
+		response.status = 'error'
+		response = reply response
+		response.statusCode = err.output.statusCode
 
 	else
 		# todo: fix this weird `.source` hack
 		res.source.status = 'ok'
+		res.source.statusCode = 200
 		reply res.source

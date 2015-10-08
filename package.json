@@ -1,6 +1,6 @@
 {
 	"name": "shout-api",
-	"description": "Let people send push notifications to a group of people.",
+	"description": "The API server for shout.",
 	"license": "MIT",
 	"author": {
 		"name": "Jannis R",
