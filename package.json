@@ -42,9 +42,9 @@
 		"lib":		"./src"
 	},
 	"scripts": {
-		"setup":	"./self-signed-certificate.zsh",
 		"server":	"coffee ./bin/shout-api -c server.crt -k server.key",
 		"start":	"forever start -c coffee ./bin/shout-api -c server.crt -k server.key",
+		"crt":		"./scipts/self-signed-certificate.zsh",
 		"stop":		"forever stop ./bin/shout-api"
 	}
 }
