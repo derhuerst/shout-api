@@ -1,0 +1,7 @@
+{
+	"port":		8002,
+	"ssl": {
+		"cert":		"self-signed.crt",
+		"key":		"self-signed.key"
+	}
+}
