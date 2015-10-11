@@ -43,7 +43,7 @@
 		"lib":		"./src"
 	},
 	"scripts": {
-		"crt":		"./scipts/self-signed-certificate.zsh",
+		"crt":		"./scripts/self-signed-certificate.zsh",
 		"server":	"coffee ./bin/shout-api",
 		"start":	"forever start",
 		"stop":		"forever stop ./bin/shout-api"
